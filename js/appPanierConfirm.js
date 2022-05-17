@@ -4,7 +4,7 @@ $(document).ready(function () {
     });
 
     var cookieVide = setDetails();
-    if(cookieVide==true){
+    if (cookieVide == true) {
         redirection();
     }
 
@@ -60,7 +60,7 @@ $(document).ready(function () {
                         if ($type) {
                             setErreurModalWithDelai("Un e-mail avec le détail de la commande va vous être envoyé à l'adresse " + $email + ".<br>Je vous recontacterai pour confirmer votre commande.<br>Vous allez être redirigé vers l'accueil", 'E-mail envoyé');
                             $.jCookie('cookieL', null, 7, { path: "/", secure: true });
-                            setTimeout(redirection,10000);
+                            setTimeout(redirection, 10000);
                         } else {
                             setErreurModal("Une erreur c'est produite.", '<br>Vérifier votre adresse ' + $email);
                         }
@@ -71,7 +71,7 @@ $(document).ready(function () {
     });
 });
 
-function redirection(){
+function redirection() {
     window.location.replace("https://volailles-lambert.fr/index.html");
 }
 
@@ -92,12 +92,12 @@ function setDetails() {
     //var json = getJon();
     var json = getJsonCookie();
     var cookieVide = true;
-    if (json !== null) {
+    if (json !== null && json !== undefined) {
         var nbrElementJson = json.panier.length;
         for (var i = 0; i < nbrElementJson; i++) {
             if (json.panier[i] !== null) {
                 $("#details").append('<p class="text-left">' + json.panier[i].produit + ' quantité : ' + json.panier[i].quantite);
-                cookieVide= false;
+                cookieVide = false;
             }
         }
     }
