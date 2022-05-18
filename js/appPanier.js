@@ -66,8 +66,9 @@ function getTbody() {
 	if (varCookie !== undefined && varCookie !== null) {
 		var listeTable = '';
 		var json = JSON.parse(varCookie);
+		//var json = getJon();
 		if (json !== null) {
-			//var json = getJon();
+			
 			var nbrElement = json.panier.length;
 			for (var i = 0; i < nbrElement; i++) {
 				if (json.panier[i] !== null) {
@@ -84,7 +85,14 @@ function getTbody() {
 			listeTable += '<tr>' +
 				'<td></td>' +
 				'<td></td>' +
-				'<td></td>' +
+				'<td>' +
+				'<div class="btn-group"> <button class="btn btn-primary dropdown-toggle"' +
+				'data-toggle="dropdown">Continuer à réserver</button>' +
+				'<div class="dropdown-menu">' +
+				'<a class="dropdown-item" href="../pages/espoulet.html">Poulet</a> <a class="dropdown-item" href="../pages/espintade.html">Pintade</a><a class="dropdown-item" href="../pages/esrillette.html">Rillettes</a>' +
+				'</div>' +
+				'</div>' +
+				'</td>' +
 				'<td><a class="btn btn-primary" href="../pages/panierValid.html">Réserver</a></td>' +
 				'</tr>';
 			$('tbody').html(listeTable);
