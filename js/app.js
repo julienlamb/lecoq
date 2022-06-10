@@ -2,7 +2,7 @@ $(document).ready(function () {
 	//Gestion du texte des tailles de poulets
 	$('#btnTailleP').on('click', function (e) {
 		$("#titreTaille").html('Petit poulet');
-		$("#tarifPoulet").html('6,85€/kg');
+		$("#tarifPoulet").html('6,90€/kg');
 		$("#presentationTaille").html('2/4 personnes - 1,6 kg à 2 kg');
 	});
 	$('#btnTailleM').on('click', function (e) {
