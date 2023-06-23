@@ -12,7 +12,7 @@ $(document).ready(function () {
 	});
 	$('#btnTailleG').on('click', function (e) {
 		$("#titreTaille").html('Gros poulet');
-		$("#tarifPoulet").html('6.60€/kg');
+		$("#tarifPoulet").html('6.80€/kg');
 		$("#presentationTaille").html('8 personnes et + - 2,8 kg et +');
 	});
 });
