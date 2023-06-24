@@ -16,7 +16,7 @@
   <script src="../js/navbar-ontop.js"></script>
   <!-- Script: Animated entrance -->
   <script src="../js/animate-in.js"></script>
-  <script src="../js/appv2.js"></script>
+  <script src="../js/appRilletteV2.js"></script>
   <script src="../js/jquery.cookie.js"></script>
   <script src="../js/appPanier.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,10 +37,10 @@
             <a class="nav-link text-dark" href="../index.html"><i class="fa fa-fw fa-home"></i>Accueil</a>
           </li>
           <li class="nav-item mx-2">
-            <a class="nav-link text-dark" href="../pages/espoulet.html">Poulet</a>
+            <a class="nav-link text-dark" href="../pages/espintade.html">Pintade</a>
           </li>
           <li class="nav-item mx-2">
-            <a class="nav-link text-dark" href="../pages/espintade.html">Pintade</a>
+            <a class="nav-link text-dark" href="../pages/espoulet.html">Poulet</a>
           </li>
           <li class="nav-item mx-2">
             <a class="btn btn-outline-dark" href="../pages/panier.html">Panier&nbsp;<i
@@ -58,7 +58,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4"></div>
-        <div class="col-md-4"><img class="img-fluid d-block mx-auto" src="../assets/img/logo/rillettes.png"></div>
+        <div class="col-md-4"><img id="imgRillettes" class="img-fluid d-block mx-auto" src="../assets/img/logo/rillettes.png"></div>
         <div class="col-md-4"></div>
       </div>
       <div class="row">
@@ -72,13 +72,24 @@
         </div>
       </div>
       <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+          <div class="btn-group m-2" id="grpRillettes"> 
+            <a class="btn btn-primary border-dark" value="p" id="btnPiment">Piment d'espelette</a> 
+            <a class="btn btn-primary border-dark" value="n" id="btnNature" checked="">Nature</a> 
+            <a class="btn btn-primary border-dark" value="c" id="btnCitron">Citron & Thyn</a> 
+          </div>
+        </div>
+        <div class="col-md-4"></div>
+      </div>
+      <div class="row">
         <div class="col-md-12">
-          <p id="presentationTaille" class="">Viande de poulet 100% issue de l'exploitation "Les volailles Lambert"</p>
+          <p id="presentationRillettes" class="">Viande de poulet 100% issue de l'exploitation "Les volailles Lambert"</p>
         </div>
       </div>
       <div class="row">
         <div class="col-md-12">
-          <p id="presentationTaille" class=""><b class="font-weight-bold">Ingrédients :</b> Viande et gras de poulet
+          <p id="presentationIngredients" class=""><b class="font-weight-bold">Ingrédients :</b> Viande et gras de poulet
             origine France (99%), sel de Guérande, poivre.</p>
         </div>
       </div>
@@ -107,7 +118,6 @@
       <!-- Call to action -->
       <!-- Footer -->
       <!-- JavaScript dependencies -->
-      <script src="../js/jQuery.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" crossorigin="anonymous"
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
