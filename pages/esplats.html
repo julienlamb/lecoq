@@ -16,7 +16,7 @@
   <script src="../js/navbar-ontop.js"></script>
   <!-- Script: Animated entrance -->
   <script src="../js/animate-in.js"></script>
-  <script src="../js/appRilletteV2.js"></script>
+  <script src="../js/appPlatV1.js"></script>
   <script src="../js/jquery.cookie.js"></script>
   <script src="../js/appPanier.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,7 +43,7 @@
             <a class="nav-link text-dark" href="../pages/espoulet.html">Poulet</a>
           </li>
           <li class="nav-item mx-2">
-            <a class="nav-link text-dark" href="../pages/esplats.html">Plats préparés</a>
+            <a class="nav-link text-dark" href="../pages/esrillette.html">Rillettes</a>
           </li>
           <li class="nav-item mx-2">
             <a class="btn btn-outline-dark" href="../pages/panier.html">Panier&nbsp;<i
@@ -61,39 +61,38 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4"></div>
-        <div class="col-md-4"><img id="imgRillettes" class="img-fluid d-block mx-auto" src="../assets/img/logo/rillettes.png"></div>
+        <div class="col-md-4"><img id="imgPlat" class="img-fluid d-block mx-auto" src="https://static.pingendo.com/img-placeholder-1.svg"></div>
         <div class="col-md-4"></div>
       </div>
       <div class="row">
         <div class="col-md-12">
-          <p id="titreTaille" class="mt-2">Rillettes nature</p>
+          <p id="titreTaille" class="mt-2">Saucisses de poulets aux Lentille</p>
         </div>
       </div>
       <div class="row">
         <div class="col-md-12">
-          <p class="font-weight-bold"><a id="prixRillette">5,50€</a><a id="qteRillette"> les 180g</a></p>
+          <p class="font-weight-bold"><a id="prixPlats">0€</a><a id="qtePlats"> les </a></p>
         </div>
       </div>
       <div class="row">
         <div class="col-md-4"></div>
         <div class="col-md-4">
-          <div class="btn-group m-2" id="grpRillettes"> 
-            <a class="btn btn-primary border-dark" value="p" id="btnPiment">Piment d'espelette</a> 
-            <a class="btn btn-primary border-dark" value="n" id="btnNature" checked="">Nature</a> 
-            <a class="btn btn-primary border-dark" value="c" id="btnCitron">Citron et Thyn</a> 
+          <div class="btn-group m-2" id="grpPlats"> 
+            <a class="btn btn-primary border-dark" value="p" id="btnSaucisses"  checked="">Saucisses Lentilles</a> 
+            <a class="btn btn-primary border-dark" value="n" id="btnMijote" checked="">Mijoté Poulets</a> 
           </div>
         </div>
         <div class="col-md-4"></div>
       </div>
       <div class="row">
         <div class="col-md-12">
-          <p id="presentationRillettes" class="">Viande de poulet 100% issue de l'exploitation "Les volailles Lambert"</p>
+          <p id="presentationPlats" class="">Saucicesses de poulet 100% issue de l'exploitation "Les volailles Lambert"</p>
         </div>
       </div>
       <div class="row">
         <div class="col-md-12">
           <p id="presentationIngredients" class=""><b class="font-weight-bold">Ingrédients :</b> Viande et gras de poulet
-            origine France (99%), sel de Guérande, poivre.</p>
+            origine France (99%), sel de Guérande, poivre, lentilles, préparé avec mon savoir faire.</p>
         </div>
       </div>
       <div class="row mb-5">
@@ -104,8 +103,7 @@
               <label class="col-form-label mr-3">Quantité : </label>
               <input id="quantite" type="number" class="form-control input-yext qty text text-center" step="1" min="0"
                 value="1" placeholder="Quantité">
-              <div class="input-group-append"><button class="btn btn-primary" type="button" name="btnPanier">Ajouter au
-                  panier</button></div>
+              <div class="input-group-append"><button class="btn btn-primary" type="button" disabled="disabled" name="btnPanier">Bientôt disponible</button></div>
             </div>
           </form>
         </div>

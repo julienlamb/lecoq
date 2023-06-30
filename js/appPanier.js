@@ -89,7 +89,7 @@ function getTbody() {
 				'<div class="btn-group"> <button class="btn btn-primary dropdown-toggle"' +
 				'data-toggle="dropdown">Continuer à réserver</button>' +
 				'<div class="dropdown-menu">' +
-				'<a class="dropdown-item" href="../pages/espoulet.html">Poulet</a> <a class="dropdown-item" href="../pages/espintade.html">Pintade</a><a class="dropdown-item" href="../pages/esrillette.html">Rillettes</a>' +
+				'<a class="dropdown-item" href="../pages/espoulet.html">Poulet</a> <a class="dropdown-item" href="../pages/espintade.html">Pintade</a><a class="dropdown-item" href="../pages/esrillette.html">Rillettes</a><a class="dropdown-item" href="../pages/esplats.html">Plats préparées</a>' +
 				'</div>' +
 				'</div>' +
 				'</td>' +
