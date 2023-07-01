@@ -4,7 +4,7 @@ $(document).ready(function () {
 		$("#titreTaille").html('Rillettes piment d&#39;espelette');
 		$("#prixRillette").html('3,50€');
 		$("#qteRillette").html(' les 90g');
-		$("#presentationIngredients").html('<b class="font-weight-bold">Ingrédients :</b> Viande et gras de poulet origine France (99%), sel de Guérande, poivre, piment d&#39;espelette.');
+		$("#presentationIngredients").html('<b class="font-weight-bold">Ingrédients :</b> Viande et gras de poulet origine France (98%), sel de Guérande, piment d&#39;espelette (0,5%), poivre.');
 		$('#imgRillettes').attr('src','../assets/img/logo/rillette_piment.png');
 	});
 	$('#btnNature').on('click', function (e) {
@@ -18,7 +18,7 @@ $(document).ready(function () {
 		$("#titreTaille").html('Rillettes citron et thyn');
 		$("#prixRillette").html('3,50€');
 		$("#qteRillette").html(' les 90g');
-		$("#presentationIngredients").html('<b class="font-weight-bold">Ingrédients :</b> Viande et gras de poulet origine France (99%), sel de Guérande, poivre, citron et thyn.');
+		$("#presentationIngredients").html('<b class="font-weight-bold">Ingrédients :</b> Viande et gras de poulet origine France (88%), citron confit (5%), oignon, sel de Guérande, thyn, poivre.');
 		$('#imgRillettes').attr('src','../assets/img/logo/rillette_citron.png');
 	});
 });
