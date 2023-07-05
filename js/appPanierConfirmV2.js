@@ -44,7 +44,7 @@ $(document).ready(function () {
                 $.ajax({
                     type: 'POST',
                     // chargement du fichier externe monfichier-ajax.php
-                    url: "../php/sendMail.php",
+                    url: "../php/sendMailWithTemplate.php",
                     // Passage des données au fichier externe (ici le nom cliqué)
                     data: { prenom: $prenom, nom: $nom, rue: $rue, codePostal: $codePostal, ville: $ville, email: $email, telephone: $telephone, message: $message, details: $details },
                     dataType: "json",
@@ -143,8 +143,11 @@ function getDetailsForMail() {
     if (json !== null) {
         var nbrElementJson = json.panier.length;
         for (var i = 0; i < nbrElementJson; i++) {
+            if(i>0){
+                $detail += '|';
+            }
             if (json.panier[i] !== null) {
-                $detail += json.panier[i].produit + ' quantité : ' + json.panier[i].quantite + '\n';
+                $detail += json.panier[i].produit + ':' + json.panier[i].quantite;
             }
         }
     }
