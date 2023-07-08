@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- PAGE settings -->
+  <link rel="icon" href="https://templates.pingendo.com/assets/Pingendo_favicon.ico">
+  <title>volailles-lambert</title>
+  <!-- CSS dependencies -->
+  <link rel="stylesheet" href="../aquamarine.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <script src="../js/jQuery.js"></script>
+  <!-- Script: Make my navbar transparent when the document is scrolled to top -->
+  <script src="../js/navbar-ontop.js"></script>
+  <!-- Script: Animated entrance -->
+  <script src="../js/animate-in.js"></script>
+  <script src="../js/updatePrice.js"></script>
+  <script src="../js/jquery.cookie.js"></script>
+  <script src="../js/appPanier.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&amp;display=swap" rel="stylesheet">
+</head>
+
+<body class="text-center">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top">
+    <div class="container-fluid">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent" aria-controls="navbar2SupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbar2SupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item mx-2">
+            <a class="nav-link text-dark" href="../index.html"><i class="fa fa-fw fa-home"></i>Accueil</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Cover -->
+  <section class="section-parallax py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="table-responsive">
+            <table class="table table-striped table-Primary">
+              <thead>
+                <tr>
+                  <th scope="col" class="table-dark text-primary">id</th>
+                  <th scope="col" class="table-dark text-primary">Produit</th>
+                  <th scope="col" class="table-dark text-primary">Prix</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Petit poulet </td>
+                  <td><input id="1" type="text" class="form-control"></td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Poulet Moyen</td>
+                  <td><input id="2" type="text" class="form-control"></td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Gros poulet</td>
+                  <td><input id="3" type="text" class="form-control"></td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td contenteditable="true">Pintade</td>
+                  <td><input id="4" type="text" class="form-control"></td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>Rillettes natures</td>
+                  <td><input id="5" type="text" class="form-control"></td>
+                </tr>
+                <tr>
+                  <th scope="row">6</th>
+                  <td>Rillettes piment d'espelette</td>
+                  <td><input id="6" type="text" class="form-control"></td>
+                </tr>
+                <tr>
+                  <th scope="row">7</th>
+                  <td>Rillettes citron et thyn</td>
+                  <td><input id="7" type="text" class="form-control"></td>
+                </tr>
+                <tr>
+                  <th scope="row">8</th>
+                  <td>Saucisses de poulets aux Lentilles</td>
+                  <td><input id="8" type="text" class="form-control"></td>
+                </tr>
+                <tr>
+                  <th scope="row">9</th>
+                  <td>Mijoté de poulets</td>
+                  <td><input id="9" type="text" class="form-control"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="row pb-5">
+        <div class="col-md-12">
+          <a id="valider" class="btn btn-primary" href="#">Valider</a>
+          <a class="btn btn-success btn-block" id="alerteOK" href="#" style="display: none"><i
+            class="glyphicon glyphicon-floppy-disk"></i>
+          <b class="text-dark font-weight-bold">&nbsp;Sauvegarder</b>
+          </a>
+          <a class="btn btn-danger btn-block" id="alerteKO" href="#" style="display: none"><i
+              class="glyphicon glyphicon-floppy-disk"></i>
+            <b class="text-dark font-weight-bold">&nbsp;Erreur</b>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="pt-1 pb-5 bg-info text-primary" id="footer">COPYRIGHT © 2022 VOLAILLES LAMBERT | POLITIQUE DE CONFIDENTIALITÉ | RÉALISÉ PAR JULIEN LAMBERT</div>
+    <a class="text-dark"></a>
+    <script src="../js/smooth-scroll.js"></script>
+  </section>
+</body>
+
+</html>

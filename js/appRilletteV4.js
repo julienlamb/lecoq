@@ -1,24 +1,32 @@
 $(document).ready(function () {
+	$.getJSON('../json/price.json', function (data) {
+		$("#titreTaille").html(data[4].name);
+		$("#prixRillette").html(data[4].price);
+		$("#qteRillette").html(data[4].qte);
+		$("#presentationIngredients").html('<b class="font-weight-bold">Ingrédients :</b> ' + data[4].details);
+		$('#imgRillettes').attr('src',data[4].img);
+
 	//Gestion du texte des tailles de poulets
-	$('#btnPiment').on('click', function (e) {
-		$("#titreTaille").html('Rillettes piment d&#39;espelette');
-		$("#prixRillette").html('3,50€');
-		$("#qteRillette").html(' les 90g');
-		$("#presentationIngredients").html('<b class="font-weight-bold">Ingrédients :</b> Viande et gras de poulet origine France (98%), sel de Guérande, piment d&#39;espelette (0,5%), poivre.');
-		$('#imgRillettes').attr('src','../assets/img/logo/rillette_piment.png');
-	});
-	$('#btnNature').on('click', function (e) {
-		$("#titreTaille").html('Rillettes nature');
-		$("#prixRillette").html('5,50€');
-		$("#qteRillette").html(' les 180g');
-		$("#presentationIngredients").html('<b class="font-weight-bold">Ingrédients :</b> Viande et gras de poulet origine France (99%), sel de Guérande, poivre.');
-		$('#imgRillettes').attr('src','../assets/img/logo/rillettes.png');
-	});
-	$('#btnCitron').on('click', function (e) {
-		$("#titreTaille").html('Rillettes citron et thyn');
-		$("#prixRillette").html('3,50€');
-		$("#qteRillette").html(' les 90g');
-		$("#presentationIngredients").html('<b class="font-weight-bold">Ingrédients :</b> Viande et gras de poulet origine France (88%), citron confit (5%), oignon, sel de Guérande, thyn, poivre.');
-		$('#imgRillettes').attr('src','../assets/img/logo/rillette_citron.png');
+		$('#btnPiment').on('click', function (e) {
+			$("#titreTaille").html(data[5].name);
+			$("#prixRillette").html(data[5].price);
+			$("#qteRillette").html(data[5].qte);
+			$("#presentationIngredients").html('<b class="font-weight-bold">Ingrédients :</b> ' + data[5].details);
+			$('#imgRillettes').attr('src',data[5].img);
+		});
+		$('#btnNature').on('click', function (e) {
+			$("#titreTaille").html(data[4].name);
+			$("#prixRillette").html(data[4].price);
+			$("#qteRillette").html(data[4].qte);
+			$("#presentationIngredients").html('<b class="font-weight-bold">Ingrédients :</b> ' + data[4].details);
+			$('#imgRillettes').attr('src',data[4].img);
+		});
+		$('#btnCitron').on('click', function (e) {
+			$("#titreTaille").html(data[6].name);
+			$("#prixRillette").html(data[6].price);
+			$("#qteRillette").html(data[6].qte);
+			$("#presentationIngredients").html('<b class="font-weight-bold">Ingrédients :</b> ' + data[6].details);
+			$('#imgRillettes').attr('src',data[6].img);
+		});
 	});
 });
