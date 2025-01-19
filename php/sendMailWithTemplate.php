@@ -37,7 +37,7 @@ if (isset($_POST['prenom']) && isset($_POST['nom']) && isset($_POST['rue']) && i
     // Additional headers 
     $headers .= 'From: Volailles Lambert<'.$mailDestination.'>' . "\r\n"; 
     $headers .= 'Cc: jeanne-travers@hotmail.fr' . "\r\n"; 
-    //$headers .= array('From' => 'info@volailles-lambert.fr', 'Reply-To' => 'jeanne-travers@hotmail.fr');
+    //$headers .= array('From' => 'info@volailles-lambert.fr');
 
     $htmlContentClient = file_get_contents("../template/templateClient.html");
 
