@@ -15,7 +15,7 @@ if (isset($_POST['prenom']) && isset($_POST['nom']) && isset($_POST['rue']) && i
     $email = $_POST['email'];
     $message = $_POST['message'];
     $details = $_POST['details'];
-    $headers = array('From' => 'info@volailles-lambert.fr', 'Reply-To' => 'jeanne-travers@hotmail.fr');
+    $headers = array('From' => 'info@volailles-lambert.fr', 'Reply-To');
 
     $messageClient = "Bonjour " . $prenom . " " . $nom . ",\n\n";
 
